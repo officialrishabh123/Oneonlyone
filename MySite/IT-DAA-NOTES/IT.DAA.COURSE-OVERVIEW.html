@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Website</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+        
+        .main {
+            width: 100vw;
+            min-height: 100vh;
+            display: flex;
+            align-items: top;
+            justify-content: center;
+            /* flex-direction: column; */
+        }
+        
+        .main .inner-div {
+            width: 80%;
+            min-height: 100vh;
+            /* padding: 0px 20px; */
+            background: rgba(0, 0, 0, 0.5);
+        }
+        
+        .main .inner-div .col-1 {
+            padding: 5px;
+            /* height: 50px; */
+            background: #fff;
+            align-items: center;
+            padding: 20px 20px;
+            font-weight: 600;
+            font-size: 20px;
+            text-transform: uppercase;
+        }
+        
+        .main .inner-div header {
+            background: chocolate;
+            padding: 20px;
+        }
+        
+        .main .inner-div header ul {
+            list-style: none;
+            display: flex;
+            align-items: center;
+            justify-content: left;
+        }
+        
+        .main .inner-div header ul li {
+            padding: 3px 7px;
+        }
+        
+        .main .inner-div header ul li:hover {
+            border-bottom: 2px solid white;
+            font-size: 22px;
+        }
+        
+        .main .inner-div header ul li a {
+            text-decoration: none;
+            color: white;
+            /* font-weight: 700; */
+            letter-spacing: 1px;
+            font-size: 20px;
+        }
+        /* ------------------ DIV-3-------------- */
+        
+        .col-3 {
+            /* width: 100%; */
+            padding-top: 1%;
+            padding: 10px;
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            flex-direction: column;
+            border: 2px solid black;
+        }
+        
+        .col-3 .content {
+            /* background: rgb(212, 116, 7); */
+            width: 100%;
+            height: 300px;
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-evenly;
+            /* border: 2px solid yellow; */
+            margin-bottom: 5%;
+        }
+        
+        .col-3 .content .video {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            padding: 5px;
+            border: 2px solid yellow;
+        }
+        
+        .col-3 .content .video iframe {
+            /* width: fit-content; */
+            width: 100%;
+            height: 100%;
+            position: relative;
+        }
+        
+        .col-3 .content .pdf {
+            /* right: 0px; */
+            position: relative;
+            width: 100%;
+            height: 100%;
+            border: 2px solid yellow;
+            padding: 5px;
+        }
+        
+        .col-3 .content .pdf embed {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            /* border: 2px solid yellow; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="inner-div">
+            <div class="col-1">
+                <div class="left-div">
+                    Meterial
+                </div>
+
+            </div>
+            <header>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </header>
+            <div class="col-3">
+                <h1> DAA COURSE-OVERVIEW</h1>
+
+
+                <div class="content">
+                    <div class="video">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/twE1eiO7gEE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="pdf">
+                        <embed src="./DAA Assignment dated 25-11-2020.pdf">
+                        <!-- Lorem ipsum dolor sit amet consectetur adipisicing elit. In modi rerum, sit blanditiis officiis ipsam corporis dolore optio sed corrupti magni ipsa recusandae quos, autem quae atque distinctio, molestiae totam. -->
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>
