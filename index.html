@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+        body{
+            width: 100vw;
+            height: 100vh;
+        }
+        .main {
+            width: 100vw;
+          
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* margin: 10% 0; */
+            position: absolute;
+            
+          
+        }
+        .innerdiv{
+            box-shadow:
+                0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+                0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+                inset 0 12.5px 10px rgba(0, 0, 0, 0.06),
+                0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+                0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+                0 100px 80px rgba(0, 0, 0, 0.12);
+            width: 80%;
+            padding: 3%;
+            /* width: 50vw; */
+            background: white;
+            border-radius: 5px;
+        }
+        .box {
+            /* width: 50%; */
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+        .box .left-Box{
+            width: 100%;
+            height: 100%;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            box-shadow:
+                0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+                0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+                inset 0 12.5px 10px rgba(0, 0, 0, 0.06),
+                0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+                0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+                0 100px 80px rgba(0, 0, 0, 0.12);
+            
+            }
+        .box .left-Box .col-1,.col-2{
+            position: relative;
+             padding: 10%;
+            margin-bottom: 10px;
+            border-radius: 10%;
+        }
+        .box .left-Box .col-1 img{
+            width: 200px;
+            height: 200px;
+            border-radius: 100%;
+            position: relative;
+        }
+        .col-2{
+            font-size: 18px;
+            
+        }
+        .col-2 span:nth-child(1)
+        {
+            color: red;
+            font-weight:500 ;
+            padding-right: 10px;
+
+        }
+        .value{
+            padding:10px 5px;
+            
+        }
+        .col-2 div{
+            padding:5px 0;
+        }
+        body {
+            background: #EEF2F7;
+        }
+        .right-Box{
+            box-shadow:
+                0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+                0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+                inset 0 12.5px 10px rgba(0, 0, 0, 0.06),
+                0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+                0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+                0 100px 80px rgba(0, 0, 0, 0.12);
+            
+        background: red;
+        padding:20px;
+        position: relative;
+        }
+
+        .timeline {
+        position: relative;
+        max-width: 1200px;
+        margin: 0 auto;
+        }
+
+        .timeline::after {
+        content: '';
+        position: absolute;
+        width: 6px;
+        background-color: rgb(255, 255, 255);
+        top: 0;
+        bottom: 0;
+        left: 10%;
+        height: 400px;
+        border-radius: 5px;
+        margin-left: -3px;
+        }
+
+        .container {
+        padding: 10px 40px;
+        position: relative;
+        
+        width: 80%;
+        }
+        .right {
+        left: 10%;
+        }
+
+     .right::before {
+        content: " ";
+        height: 0;
+        position: absolute;
+        top: 22px;
+        width: 0;
+        z-index: 1;
+        left: 30px;
+        border: medium solid white;
+        border-width: 10px 10px 10px 0;
+        border-color: transparent white transparent transparent;
+        }
+
+
+     
+        .content {
+        padding: 20px 30px;
+        background-color: rgb(255, 255, 255);
+        position: relative;
+        border-radius: 6px;
+        }
+
+@media(max-width:1000px){
+    .box {
+            /* width: 50%; */
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+
+}
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="innerdiv">
+            <div class="box effect1">
+                <div class="left-Box">
+                    <div class="col-1">
+                        <img src="ada.jpg" alt="">
+                    </div>
+                    <div class="col-2">
+                        <div>
+                            <span>Name :</span> <br>
+                            <span class="value">Rishabh tiwari</span>
+                        </div>
+                        <div>
+                            <span>Father's name :</span><br>
+                            <span class="value">Shree Ganga prasad tiwari</span>
+                        </div>
+                        <div>
+                            <span>Email : </span><br>
+                            <span class="value"> rishabhtiwari1702@gmail.com</span>
+                        </div>
+                        <div>
+                            <span>D.O.B : </span><br>
+                            <span class="value"> 01/07/2002 </span>
+                        </div>
+                        <div><span> College name : </span><br>
+                            <span class="value">Axis Institute of technology and management</span>
+                        </div>
+                        <div>
+                            <span>Address : </span><br>
+                            <span class="value">Govind nagar Auraiya</span>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="right-Box">
+                    <div class="timeline">
+                        
+                        <div class="container right">
+                          <div class="content">
+                            <h3>10:00 am</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur </p>
+                          </div>
+                        </div>
+                        <div class="container right">
+                            <div class="content">
+                              <h3>12:00 </h3>
+                              <p>Lorem ipsum..</p>
+                            </div>
+                          </div>
+                      </div>
+                      <div class="container right">
+                        <div class="content">
+                          <h3>1:00</h3>
+                          <p>Lorem ipsum..</p>
+                        </div>
+                      </div>
+                  
+                        <div class="container right">
+                            <div class="content">
+                            <h3>2:00</h3>
+                            <p>Lorem ipsum..</p>
+                            </div>
+                        </div>
+              </div>
+                      
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
